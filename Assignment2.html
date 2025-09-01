@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment2</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif;">
+
+  <!-- Header -->
+  <div style="width: 100%; height: 60px; background-color: blue; display: flex; align-items: center; justify-content: center; position: relative;">
+    <!-- Logo at left -->
+    <img src="bus logo.webp" alt="bus services" style="border-radius:20px; height: 60px; position: absolute; left: 10px;">
+    
+    <!-- Centered Title -->
+    <h1 style="color: white; margin: 0;">Book Seat</h1>
+  </div>
+
+  <!-- Full Window: Form + Image -->
+  <div style="height: calc(100vh - 60px); width: 100%; background-color: blanchedalmond; display: flex; justify-content: center; align-items: center; box-sizing: border-box;">
+
+    <!-- Form + Image Container -->
+    <div style="width: 90%; height: 90%; background: white; border-radius: 15px; display: flex; box-shadow: 0 6px 15px rgba(0,0,0,0.3); overflow: hidden;">
+
+      <!-- Left Side: Form -->
+      <div style="flex: 1; padding: 30px;">
+        <h2 style="text-align: center; margin-top: 10px; color: darkblue;">* Welcome to Bus Booking System *</h2>
+
+        <form style="margin-top: 20px;">
+          <label style="font-weight: bold; font-size: 18px; color: darkred;">User Details</label><br><br>
+
+          <!-- Username -->
+          <label style="font-weight: bold;">User Name</label><br>
+          <input type="text" style="width: 95%; padding: 10px; margin-top: 5px; border: 1px solid gray; border-radius: 8px; font-size: 14px;"><br><br>
+
+          <!-- Password -->
+          <label style="font-weight: bold;">User Password</label><br>
+          <input type="password" style="width: 95%; padding: 10px; margin-top: 5px; border: 1px solid gray; border-radius: 8px; font-size: 14px;"><br><br>
+
+          <!-- Gender -->
+          <label style="font-weight: bold;">User Gender</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label><br><br>
+
+          <!-- City -->
+          <label style="font-weight: bold;">User City</label><br>
+          <select style="width: 95%; padding: 10px; margin-top: 5px; border: 1px solid gray; border-radius: 8px; font-size: 14px;">
+            <option>Select your city</option>
+            <option>Saran</option>
+            <option>Siwan</option>
+            <option>Banaras</option>
+          </select><br><br>
+
+          <!-- Book Seat Button -->
+          <a href="payment.html" style="text-decoration: none;">
+            <button type="button" style="width: 100%; padding: 12px; background-color: red; color: white; font-size: 16px; border: none; border-radius: 10px; cursor: pointer; font-weight: bold;">
+              Book Seat
+            </button>
+          </a>
+        </form>
+      </div>
+
+      <!-- Right Side: Image -->
+      <div style="flex: 1; display: flex; justify-content: center; align-items: center; background: #f5f5f5;">
+        <img src="bus services.avif" alt="Bus Image" style="max-width: 90%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
