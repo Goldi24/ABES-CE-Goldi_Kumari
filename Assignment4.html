@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment4</title>
+  <style>
+    .adi {
+      display: flex;
+      background: #2874f0;
+      color: white;
+      padding: 10px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .sss { flex: 1; margin: 0 10px; }
+    .sss input { width: 100%; padding: 5px; }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 10px;
+      padding: 10px;
+      background: #f1f3f6;
+      text-align: center;
+    }
+    .categories div {
+      background: white;
+      padding: 10px;
+      border-radius: 6px;
+    }
+    .categories img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="adi">
+    <div><b>Flipkart</b></div>
+    <div class="sss"><input type="text" placeholder="Search..."></div>
+    <div>Login | Cart | More</div>
+  </div>
+
+  <div class="categories">
+    <div> <img src="minutes.jpeg" alt="">minutes</div>
+    <div> <img src="clothing.jpg" alt="">clothing</div>
+    <div> <img src="electronics.jpeg" alt="">electronics</div>
+    <div> <img src="home.jpeg" alt="">home</div>
+    <div> <img src="makeup.jpg" alt="">beauty</div>
+    <div> <img src="bookings.jpeg" alt="">flight booking</div>
+  </div>
+
+</body>
+</html>
+
